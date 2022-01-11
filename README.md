@@ -21,8 +21,9 @@ Start by setting up the appropriate environment to run a Jupyter Notebook file t
 Using Seaborne, HVplot and Matplotlib, I created visualizations to better understand the distribution of prices, as well as price's relationship with other important variables scraped from the listings.
 
 The following show the statistics and distribution of home prices (after data cleaning was performed):
+
 ![](housing_charts/price_description.jpg)
 
-![](housing_charts/price_histogram.jpg | width=100)
+![](housing_charts/price_histogram.jpg)
 
 
