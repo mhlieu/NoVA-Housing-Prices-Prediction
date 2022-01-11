@@ -24,6 +24,6 @@ The following show the statistics and distribution of home prices (after data cl
 
 ![](housing_charts/price_description.jpg)
 
-![](housing_charts/price_histogram.jpg)
+![](housing_charts/price_histogram.jpg){:height="50%" width="50%"}
 
 
