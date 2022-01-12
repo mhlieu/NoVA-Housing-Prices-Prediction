@@ -35,6 +35,6 @@ The relationship between price and other variables in the data is best shown usi
 ## 📈 Predicting House Prices using Regression Models
 Regression analysis was chosen as the best type of model because we are predicting the continuous dependent variable of house prices from a number of independent variables.
 
-In preparing the data for regression models, I had to ensure 1) Linearity 2) Homoscedasticity 3) Independence and 4) Normality.
+In preparing the data for regression models, I had to ensure 1) DV is measured on a continuous level 2) Linearity between the DV and each IV 3) No multicollinearity 4) Normal distribution of residual errors 5) Homoscedasticity and 6) Independence of errors.
 
 
