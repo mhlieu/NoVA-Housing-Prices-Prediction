@@ -38,3 +38,5 @@ Regression analysis was chosen as the best type of model because we are predicti
 In preparing the data for regression models, I had to ensure 1) DV is measured on a continuous level 2) Linearity between the DV and each IV 3) No multicollinearity 4) Normal distribution of residual errors 5) Homoscedasticity and 6) Independence of errors.
 
 
+
+
