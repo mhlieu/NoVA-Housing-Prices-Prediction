@@ -28,7 +28,7 @@ The following show the statistics and distribution of home prices (after data cl
 
 The relationship between price and other variables in the data is best shown using a correlation heatmap and a pairplot:
 
-![](housing_charts/heatmap.jpg)
+![]
 
 ![](housing_charts/pairplot.jpg)
 
