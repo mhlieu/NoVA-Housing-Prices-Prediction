@@ -56,4 +56,5 @@ The equation for the Polynomial Regression model, which has a degree of 2, has t
 ![](housing_charts/polyreg_coefficients.jpg)
 
 The equation for the Elastic Net Regression model has the following intercept and coefficients:
+
 ![](housing_charts/elasticnet_coefficients.jpg)
