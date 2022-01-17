@@ -40,6 +40,7 @@ In preparing the data for regression models, I had to ensure 1) DV is measured o
 After applying the appropriate transformations to variables to ensure linearity between DV and each IV, verifying variance inflation factors (VIF) of coefficients were less than 5 each to ensure no multicollinearity, checking a Q-Q plot of the model's residuals to ensure normality, using a robust regression technique to account for heteroscedasticity, and checking that the Durbin-Watson value is around 2 to check for independence of errors, all assumptions were taken care of.
 
 After splitting the data between training and test sets, the former was trained on 6 different types of regression models: Linear, Random Sample Consensus (RANSAC), Ridge, Lasso, Elastic Net and Polynomial. Linear regression was the baseline model upon which the other types were built, and the linear regression equation's intercept and coefficients are as follows:
+
 ![](housing_charts/linreg_coefficients.jpg)
 
 Evaluation of the 6 models is shown below:
