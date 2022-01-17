@@ -41,6 +41,6 @@ After applying the appropriate transformations to variables to ensure linearity 
 
 After splitting the data between training and test sets, the former was trained on 6 different types of regression models: Linear, Random Sample Consensus (RANSAC), Ridge, Lasso, Elastic Net and Polynomial. Evaluation of the 6 models is shown below:
 
-![](housing_charts/model_evaluation.jpg)
+![]()
 
 
