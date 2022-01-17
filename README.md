@@ -52,4 +52,8 @@ Focusing on RMSE as the error metric to evaluate the 6 models, we see Polynomial
 Using R^2 as a goodness of fit measure, Polynomial Regression and Elastic Net, respectively, were also the best performing models:
 ![](housing_charts/R2_square.jpg)
 
+The equation for the Polynomial Regression model, which has a degree of 2, has the following intercept ('const') coefficients for each feature combination (e.g. 'Sqft No_ba' is the variable 'Sqft' times 'No_ba'):
+![](housing_charts/polyreg_coefficients.jpg)
 
+The equation for the Elastic Net Regression model has the following intercept and coefficients:
+![](housing_charts/elasticnet_coefficients.jpg)
