@@ -37,9 +37,9 @@ Regression analysis was chosen as the best type of model because we are predicti
 
 In preparing the data for regression models, I had to ensure 1) DV is measured on a continuous level 2) Linearity between the DV and each IV 3) No multicollinearity 4) Normal distribution of residual errors 5) Homoscedasticity and 6) Independence of errors.
 
-After applying the appropriate transformations to variables to ensure linearity between DV and each IV, verifying variance inflation factors (VIF) of coefficients were less than 5 each to ensure no multicollinearity, checking a Q-Q plot of the model's residuals to ensure normality, using a robust regression technique to account for heteroscedasticity, and checking that the Durbin-Watson value is around 2 to check for independence of errors, all assumptions were taken care of.
+After applying the appropriate transformations to variables to ensure linearity between DV and each IV, verifying variance inflation factors (VIF) of coefficients were less than 5 each to ensure no multicollinearity, checking a Q-Q plot of the model's residuals to ensure their normality, using a robust regression technique to account for heteroscedasticity, and checking that the Durbin-Watson value is around 2 to check for independence of errors, all assumptions were taken care of.
 
-After splitting the data between training and test sets, the former was trained on 6 different types of regression models: Linear, Random Sample Consensus (RANSAC), Ridge, Lasso, Elastic Net and Polynomial. Linear regression was the baseline model upon which the other types were built, and the linear regression equation's intercept and coefficients are as follows, where we see that an increase in 1 square foot results in a $226 increase in home price, an extra bathroom results in a $66.6k increase, an extra bedroom results in a $29.5k increase, and an increase in $1 in the median income of the home's city results in a $4.6 increase:
+Once I split the data between training and test sets, the former was trained on 6 different types of regression models: Linear, Random Sample Consensus (RANSAC), Ridge, Lasso, Elastic Net and Polynomial. Linear regression was the baseline model upon which the other types were built, and the linear regression equation's intercept and coefficients are shown below, where we see that an increase in 1 square foot results in a $226.0 increase in home price, an extra bathroom results in a $66.6k increase, an extra bedroom results in a $29.5k increase, and an increase in $1 in the median income of the home's city corresponds to a $4.6 increase:
 
 ![](housing_charts/linreg_coefficients.jpg)
 
@@ -55,6 +55,12 @@ Using R^2 as a goodness of fit measure, Polynomial Regression and Elastic Net, r
 The equation for the Polynomial Regression model, which has a degree of 2, has the following intercept ('const') coefficients for each feature combination (e.g. 'Sqft No_ba' is the variable 'Sqft' times 'No_ba'):
 ![](housing_charts/polyreg_coefficients.jpg)
 
-The equation for the Elastic Net Regression model has the below intercept and coefficients. This equation can be interpreted as an increase in 1 square foot results in a $226 increase in home price, an extra bathroom results in a $65.7k increase, an extra bedroom results in a $29.3k increase, and an increase in $1 in the median income of the home's city results in a $4.6 increase (overall pretty similar to what we see in the Linear Regression equation):
+The equation for the Elastic Net Regression model has the below intercept and coefficients. This equation can be interpreted as an increase in 1 square foot results in a $226.6 increase in home price, an extra bathroom results in a $65.7k increase, an extra bedroom results in a $29.3k increase, and an increase in $1 in the median income of the home's city results in a $4.6 increase (overall pretty similar to what we see in the Linear Regression equation, but most coefficients are smaller, except for Sqft, due to the L1 and L2 penalties):
 
 ![](housing_charts/elasticnet_coefficients.jpg)
+
+## ⏭ Takeaways and Next Steps
+
+While a Polynomial Regression fit the data and reduced errors the best out of all 6 models, the Elastic Net Regression model was a lot easier to interpret for the purpose of just my own house search (nothing super high stakes here). Based on the Elastic Net equation, and thus also the Linear Regression equations upon which it was built, I could tell the order of importance of certain features shown in Zillow listings, and the magnitude of which each affected a home's price. Square footage was obviously the most important feature, but using the models I can now tell exactly how much I should expect to pay for houses I'm interested in during the course of my search, given the size, number of bathrooms and bedrooms and the median income of the city in which it is located. 
+
+Notes: next steps - logistic regression to predict whether new data is categorized as "underpriced" or "overpriced", inspecting whether models are overfit given low cross validation scores and why, collecting more data from other time periods to analyze cyclicality of prices.
