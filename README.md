@@ -47,7 +47,7 @@ Evaluation of the 6 models is shown below:
 ![](housing_charts/model_evaluation.jpg)
 
 Focusing on RMSE as the error metric to evaluate the 6 models, we see Polynomial Regression, followed by Elastic Net, performed the best:
-![]()
+![](housing_charts/RMSE_scores.jpg)
 
 Using R^2 as a goodness of fit measure, Polynomial Regression and Elastic Net, respectively, were also the best performing models:
 ![](housing_charts/R2_square.jpg)
