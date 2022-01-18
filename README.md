@@ -41,10 +41,10 @@ After applying the appropriate transformations to variables to ensure linearity 
 
 Once I split the data between training and test sets, the former was trained on 6 different types of regression models: Linear, Random Sample Consensus (RANSAC), Ridge, Lasso, Elastic Net and Polynomial. Linear regression was the baseline model upon which the other types were built, and the linear regression equation's intercept and coefficients are shown below, where we see that an increase in 1 square foot results in a $226.0 increase in home price, an extra bathroom results in a $66.6k increase, an extra bedroom results in a $29.5k increase, and an increase in $1 in the median income of the home's city corresponds to a $4.6 increase:
 
-![](housing_charts/linreg_coefficients.jpg)
+![]()
 
 Evaluation of the 6 models is shown below:
-![](housing_charts/model_evaluation.jpg)
+![]()
 
 Focusing on RMSE as the error metric to evaluate the 6 models, we see Polynomial Regression, followed by Elastic Net, performed the best:
 ![](housing_charts/RMSE_scores.jpg)
@@ -57,7 +57,7 @@ The equation for the Polynomial Regression model, which has a degree of 2, has t
 
 The equation for the Elastic Net Regression model has the below intercept and coefficients. This equation can be interpreted as an increase in 1 square foot results in a $226.6 increase in home price, an extra bathroom results in a $65.7k increase, an extra bedroom results in a $29.3k increase, and an increase in $1 in the median income of the home's city results in a $4.6 increase (overall pretty similar to what we see in the Linear Regression equation, but most coefficients are smaller, except for Sqft, due to the L1 and L2 penalties):
 
-![](housing_charts/elasticnet_coefficients.jpg)
+![]()
 
 ## ⏭ Takeaways and Next Steps
 
