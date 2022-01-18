@@ -64,6 +64,9 @@ The equation for the Elastic Net Regression model has the below intercept and co
 While a Polynomial Regression fit the data and reduced errors the best out of all 6 models, the Elastic Net Regression model was a lot easier to interpret for the purpose of just my own house search (nothing super high stakes here). Based on the Elastic Net equation, and thus also the Linear Regression equations upon which it was built, one can tell the order of importance of certain features shown in Zillow listings, and the magnitude of which each affected a home's price. Square footage was obviously the most important feature, but using the models I can now tell exactly how much I should expect to pay for houses I'm interested in during the course of my search, given the size, number of bathrooms and bedrooms and the median income of the city in which it is located. 
 
 As for next steps, the following four are problems I can further investigate:
-A) Perform logistic regression to predict whether new data is categorized as "underpriced" or "overpriced" based on training data
+
+A) Perform logistic regression to predict whether new data is categorized as "underpriced" or "overpriced" based on thresholds determined from the training data
+
 B) Inspect whether models are overfit given low cross validation scores and why
-C) Collect more data from other time periods to analyze cyclicality of prices, especially in this housing market, where we saw Zillow's algorithms fall short in being able to keep up with
+
+C) Collect more data from other time periods to analyze cyclicality of prices, especially in this housing market, where we saw Zillow's algorithms fall short in being able to keep up with, ultimately leading to its recent layoffs and shuttering of its house-flipping business.
