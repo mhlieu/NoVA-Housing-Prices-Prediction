@@ -57,7 +57,7 @@ The equation for the Polynomial Regression model, which has a degree of 2, has t
 
 The equation for the Elastic Net Regression model has the below intercept and coefficients. This equation can be interpreted as an increase in 1 square foot results in a $226.6 increase in home price, an extra bathroom results in a $65.7k increase, an extra bedroom results in a $29.3k increase, and an increase in $1 in the median income of the home's city results in a $4.6 increase (overall pretty similar to what we see in the Linear Regression equation, but most coefficients are smaller, except for Sqft, due to the L1 and L2 penalties):
 
-![]()
+![](housing_charts/elasticnet_coefficients.jpg)
 
 ## ⏭ Takeaways and Next Steps
 
