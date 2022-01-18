@@ -36,7 +36,7 @@ Of particular interest to me was median housing prices by city/location. Great F
 
 ![](housing_charts/price_city_barplot.jpg)
 
-However, when we look at it on a price/sqft basis, we see that Arlington and McLean are the two marginally highest priced locations. This means that although gross prices are highest in Great Falls and Vienna, buyers are getting relatively good deals in that they are "getting moderate bang for their buck" for homes in those two cities.
+However, when we look at it on a price/sqft basis, we see that Arlington and McLean are the two marginally highest priced locations. This means that although gross prices are highest in Great Falls and Vienna, buyers are getting relatively good deals in that they are "getting moderate bang for their buck" for homes in those two cities. In fact, if you check the notebook, you'll see in another chart showing median square footage of homes in each city, Great Falls and Vienna boast the largest home sizes, in addition to highest gross prices.
 
 ![](housing_charts/price_sqft_city_barplot.jpg)
 
