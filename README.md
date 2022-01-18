@@ -39,7 +39,7 @@ In preparing the data for regression models, I had to ensure 1) DV is measured o
 
 An intermediate step was feature selection. This was done using the `SelectKBest` method from SciKit Learn to select the 4 best features out of the 12 features scraped from listings, of which only 7 were meaningful. The results of the method are as follows, with Sqft (total square footage), No_ba (number of bathrooms), No_bd (number of bedrooms) and City_median_income (median income of the city in which the house is located) selected as the best using the `f_regression` function:
 
-![]()
+![](housing_charts/selectKBest.jpg)
 
 After applying the appropriate transformations to the selected variables to ensure linearity between DV and each IV, verifying variance inflation factors (VIF) of coefficients were less than 5 each to ensure no multicollinearity, checking a Q-Q plot of the model's residuals to ensure their normality, using a robust regression technique to account for heteroscedasticity, and checking that the Durbin-Watson value is around 2 to check for independence of errors, all assumptions were taken care of.
 
