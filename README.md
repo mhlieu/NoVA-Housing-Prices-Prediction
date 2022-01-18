@@ -32,6 +32,14 @@ The relationship between price and other variables in the data is best shown usi
 
 ![](housing_charts/pairplot.jpg)
 
+Of particular interest to me was median housing prices by city/location. Great Falls and Vienna stole the show, with Arlington coming in as an honorable mention:
+
+![](housing_charts/price_city_barplot.jpg)
+
+However, when we look at it on a price/sqft basis, we see that Arlington and McLean are the two marginally highest priced locations. This means that although gross prices are highest in Great Falls and Vienna, buyers are getting relatively good deals in that they are "getting moderate bang for their buck" for homes in those two cities.
+
+![](housing_charts/price_sqft_city_barplot.jpg)
+
 ## 📈 Predicting House Prices using Regression Models
 Regression analysis was chosen as the best type of model because we are predicting the continuous dependent variable of house prices from a number of independent variables.
 
