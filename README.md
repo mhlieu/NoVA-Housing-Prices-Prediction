@@ -48,15 +48,19 @@ Once I split the data between training and test sets, the former was trained on 
 ![](housing_charts/linreg_coefficients.jpg)
 
 Evaluation of the 6 models is shown below:
+
 ![](housing_charts/model_evaluation.jpg)
 
 Focusing on RMSE as the error metric to evaluate the 6 models, we see Polynomial Regression, followed by Elastic Net, performed the best:
+
 ![](housing_charts/RMSE_scores.jpg)
 
 Using R^2 as a goodness of fit measure, Polynomial Regression and Elastic Net, respectively, were also the best performing models:
+
 ![](housing_charts/R2_square.jpg)
 
 The equation for the Polynomial Regression model, which has a degree of 2, has the following intercept ('const') coefficients for each feature combination (e.g. 'Sqft No_ba' is the variable 'Sqft' times 'No_ba'):
+
 ![](housing_charts/polyreg_coefficients.jpg)
 
 The equation for the Elastic Net Regression model has the below intercept and coefficients. This equation can be interpreted as an increase in 1 square foot results in a $226.6 increase in home price, an extra bathroom results in a $65.7k increase, an extra bedroom results in a $29.3k increase, and an increase in $1 in the median income of the home's city results in a $4.6 increase (overall pretty similar to what we see in the Linear Regression equation, but most coefficients are smaller, except for Sqft, due to the L1 and L2 penalties):
