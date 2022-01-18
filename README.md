@@ -73,8 +73,8 @@ While a Polynomial Regression fit the data and reduced errors the best out of al
 
 As for next steps, the following four ideas are areas I can explore to take this project further:
 
-A) Perform logistic regression to predict whether new data is categorized as "underpriced" or "overpriced" based on thresholds determined from the training data
+A) Inspect whether models are overfit given low cross validation scores and why
 
-B) Inspect whether models are overfit given low cross validation scores and why
+B) Perform logistic regression to predict whether new data is categorized as "underpriced" or "overpriced" based on thresholds determined from the training data
 
 C) Collect more data from other time periods to analyze cyclicality of prices--especially in this housing market, where we saw Zillow's algorithms fall short in being able to keep up with rapid price swings, ultimately leading to its recent layoffs and shuttering of its house-flipping business.
